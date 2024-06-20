@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "ap-south-1"
+}
+
 locals {
   is_http      = var.protocol_type == "HTTP"
   is_websocket = var.protocol_type == "WEBSOCKET"
